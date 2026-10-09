@@ -1,0 +1,17 @@
+# Android Studio and IntelliJ
+.idea/
+*.iml
+
+# Gradle and generated build files
+.gradle/
+**/build/
+
+# Local Android SDK configuration
+local.properties
+
+# Signing keys
+*.jks
+*.keystore
+
+# macOS files
+.DS_Store

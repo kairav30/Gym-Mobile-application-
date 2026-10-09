@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".information">
+
+    <TextView
+        android:id="@+id/biceps_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How to train Biceps:"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:textColor="#0000FF"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+        <TextView
+            android:id="@+id/Biceps_exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="112dp"
+            android:text="To effectively train your biceps efficicently first we have to understand how the the biceps are built. It cosnsist of 2 muscles the short head and long head and to fully maximise growth, training both these areas are crucial. To hit the short head perform preacher curls where you rest the back of your arms fully extended on a bench at a inlicne and then curl the weight towards you with keeping your arms pressed againts the bench. Repeat this for 3 sets aiming for a weight where you can do between 6-9 reps. To hit the long head hammer curls are an efficient exercise, this is where your stood up and you bend your arms at a 95 degree angle whilst bringing it across your chest, whilst also keeping your elbows tucked which puts even more strain on the long head. The combination of these two exercises are enough to maximise growth in the bicep as they are also trained in other body parts such as the back. "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/legs_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:text="How to train legs:"
+        android:textColor="#0000FF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Biceps_exercise" />
+
+
+    <TextView
+        android:id="@+id/legs_exercise"
+        android:layout_width="374dp"
+        android:layout_height="258dp"
+        android:text="To grow your legs it involes training your hamstrings,calves,quads and glutes. Using the leg curl machine where you pick a heavyweight for you and curl your leg as high as possible and slowly letting it down for each rep adds even more resistance which will break your muscle fibres allowing them to grow even bigger.This will also reduce the risk of injury to the legs if you play alot of sports as the hamstrings are a muscles used in everyday use. Squats are a compunds excerise meaning they target different muscle groups simultaneously and are good for overall growth, first u will grab a long bar and add a weight you are comfortable with, then you will want to make sure your feet are more than shoulder width apart and tensing your core, whilst your chest and back are in a neutral position. Then slwoly bend your knees and push back up. "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/legs_title" />
+
+    <Button
+        android:id="@+id/back_button_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/legs_exercise"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

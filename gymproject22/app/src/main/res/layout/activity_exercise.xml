@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    tools:context=".ExerciseActivity">
+
+    <TextView
+        android:id="@+id/backexercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back exercise"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="10dp"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/r1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/backexercise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/exercise1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Exercise 1"
+            android:padding="10dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/reps1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Reps"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/Weights1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="KG"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/r2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/r1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/exercise2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Exercise 2"
+            android:padding="10dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/reps2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Reps"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+
+        <EditText
+            android:id="@+id/Weights2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="KG"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/r3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/r2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/exercise3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Exercise 3"
+            android:padding="10dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/reps3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Reps"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/Weights3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="KG"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <CheckBox
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/biceps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Biceps exercise"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/r3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/r4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/biceps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/exercise4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Exercise 1"
+            android:padding="10dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/reps4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Reps"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/Weights4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="KG"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <CheckBox
+            android:id="@+id/check4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/r5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/r4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/exercise5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Exercise 2"
+            android:padding="10dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/reps5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Reps"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/Weights5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="KG"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <CheckBox
+            android:id="@+id/check5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/r6"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/r5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/exercise6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Exercise 3"
+            android:padding="10dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/reps6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Reps"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/Weights6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="KG"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <CheckBox
+            android:id="@+id/check6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chest exercise"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/r6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/r7"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/chest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/exercise7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Exercise 1"
+            android:padding="10dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/reps7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Reps"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/Weights7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="KG"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <CheckBox
+            android:id="@+id/check7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/r8"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/r7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/exercise8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Exercise 2"
+            android:padding="10dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/reps8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Reps"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/Weights8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="KG"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <CheckBox
+            android:id="@+id/check8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/r9"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/r8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/exercise9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Exercise 3"
+            android:padding="10dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/reps9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Reps"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/Weights9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="KG"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+        <CheckBox
+            android:id="@+id/check9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Back_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Home page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
